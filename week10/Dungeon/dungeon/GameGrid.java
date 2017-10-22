@@ -26,7 +26,7 @@ public class GameGrid {
     public void createGrid(){
         gameGrid.clear();
         ArrayList<Character> players = characters.returnCharacters();
-        for(int y = 0; y < length; y++){
+        for(int y = 0; y < height; y++){
             ArrayList<Character> playersOnY = new ArrayList<Character>();
             for(Character c : players){
                 if(c.getY() == y){
